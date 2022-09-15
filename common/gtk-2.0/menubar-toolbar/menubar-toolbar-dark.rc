@@ -1,11 +1,11 @@
 style "menubar" {
 
-  bg[NORMAL] = "#2f343f"
-  fg[NORMAL] = "#afb8c5"
-  fg[PRELIGHT] = "#afb8c5"
-  fg[ACTIVE] = "#afb8c5"
+  bg[NORMAL] = "#1c1c1c"
+  fg[NORMAL] = "#949494"
+  fg[PRELIGHT] = "#949494"
+  fg[ACTIVE] = "#afafaf"
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
+  fg[INSENSITIVE] = shade(0.7, "#949494")
 
   xthickness = 0
   ythickness = 0
@@ -23,10 +23,10 @@ style "menubar" {
 
 style "menubar-borderless" {
 
-  bg[NORMAL] = "#2f343f"
-  fg[NORMAL] = "#afb8c5"
+  bg[NORMAL] = "#1c1c1c"
+  fg[NORMAL] = "#949494"
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
+  fg[INSENSITIVE] = shade(0.7, "#949494")
 
   xthickness = 0
   ythickness = 0
@@ -47,7 +47,7 @@ style "menubar_item" {
   xthickness = 2
   ythickness = 4
 
-  fg[PRELIGHT] = @selected_fg_color
+  fg[PRELIGHT] = "#2a2a2a"
 
   engine "pixmap" {
 
@@ -72,15 +72,15 @@ style "menubar-text" {
 
 
 style "toolbar_text" {
-  fg[NORMAL] = "#afb8c5"
-  fg[PRELIGHT] = "#afb8c5"
-  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
-  fg[ACTIVE] = "#afb8c5"
+  fg[NORMAL] = "#949494"
+  fg[PRELIGHT] = "#949494"
+  fg[INSENSITIVE] = shade(0.7, "#949494")
+  fg[ACTIVE] = "#949494"
 
-  text[NORMAL] = "#afb8c5"
-  text[PRELIGHT] = "#afb8c5"
-  text[INSENSITIVE] = shade(0.7, "#afb8c5")
-  text[ACTIVE] = "#afb8c5"
+  text[NORMAL] = "#949494"
+  text[PRELIGHT] = "#949494"
+  text[INSENSITIVE] = shade(0.7, "#949494")
+  text[ACTIVE] = "#949494"
 
 }
 
@@ -127,11 +127,11 @@ style "toolbar_button" {
 
 style "toolbar_entry" {
 
-  base[NORMAL] = "#404552"
-  base[ACTIVE] = "#404552"
-  base[INSENSITIVE] = "#39404d"
+  base[NORMAL] = "#101010"
+  base[ACTIVE] = "#101010"
+  base[INSENSITIVE] = "#393939"
 
-  text[NORMAL] = "#afb8c5"
+  text[NORMAL] = "#949494"
 
   engine "pixmap" {
 
@@ -187,8 +187,8 @@ style "toolbar_entry" {
 #Chromium
 style "chrome-gtk-frame" {
 
-  ChromeGtkFrame::frame-color = "#2f343f"
-  ChromeGtkFrame::inactive-frame-color = "#2f343f"
+  ChromeGtkFrame::frame-color = "#1c1c1c"
+  ChromeGtkFrame::inactive-frame-color = "#1c1c1c"
 
   ChromeGtkFrame::frame-gradient-size = 0
   ChromeGtkFrame::frame-gradient-color = shade(0.5, @bg_color)
